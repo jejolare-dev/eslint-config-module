@@ -22,6 +22,7 @@ This ESLint configuration extends the Jejolare.dev config. You can override any 
 
 ```js
 module.exports = {
+  // Or 'jejolare/backend' for Node.js app
   extends: ['jejolare/frontend'],
 
   // This is needed only if you use TypeScript
