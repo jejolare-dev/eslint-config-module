@@ -16,7 +16,7 @@ npm i -D eslint-config-jejolare
 
 ## 🛠️ Step 2: Configuration Files
 
-### `.eslintrc.js`
+### `.eslintrc.cjs`
 
 This ESLint configuration extends the Jejolare.dev config. You can override any rules as needed.
 

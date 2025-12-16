@@ -53,7 +53,9 @@ module.exports = {
     "import/no-cycle": "off",
     "no-constant-condition": "off",
     "no-continue": "off",
-    "import/no-mutable-exports": "off"
+    "import/no-mutable-exports": "off",
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
   },
   "settings": {
     "import/resolver": {
