@@ -5,8 +5,9 @@ Step-by-step guide of importing the config into the project.
 ---
 
 ## 📦 Step 1: Install Config As A Dev Dependency
+1. Remove all eslint & prettier connected packages you already have installed (eslint-plugin-*, eslint-config-*, eslint-parser*, and eslint & prettier themselves) due to possible installation conflicts with this package.
 
-Install required package:
+2. Install required package:
 
 ```bash
 npm i -D eslint-config-jejolare
