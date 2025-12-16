@@ -21,12 +21,7 @@ module.exports = {
     "no-console": "off",
     "no-void": "off",
     "import/extensions": "off",
-    "no-unused-vars": [
-      "warn",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ],
+    "no-unused-vars": "off",
     "func-names": "off",
     "consistent-return": "off",
     "no-restricted-syntax": "off",
