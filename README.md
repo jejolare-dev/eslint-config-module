@@ -5,8 +5,9 @@ Step-by-step guide of importing the config into the project.
 ---
 
 ## 📦 Step 1: Install Config As A Dev Dependency
+1. Remove all eslint & prettier connected packages you already have installed (eslint-plugin-*, eslint-config-*, eslint-parser*, and eslint & prettier themselves) due to possible installation conflicts with this package.
 
-Install required package:
+2. Install required package:
 
 ```bash
 npm i -D eslint-config-jejolare
@@ -16,7 +17,7 @@ npm i -D eslint-config-jejolare
 
 ## 🛠️ Step 2: Configuration Files
 
-### `.eslintrc.js`
+### `.eslintrc.cjs`
 
 This ESLint configuration extends the Jejolare.dev config. You can override any rules as needed.
 
@@ -104,7 +105,7 @@ migrations/
 "scripts": {
   "format": "prettier --write .",
   "format:check": "prettier --check .",
-  "eslint": "eslint . --ext .js,.ts,.tsx,.jsx --fix"
+  "eslint": "eslint . --ext .js,.ts,.tsx,.jsx,.cjs,.mjs --fix"
 }
 ```
 

@@ -20,12 +20,7 @@ module.exports = {
     "no-console": "off",
     "no-void": "off",
     "import/extensions": "off",
-    "no-unused-vars": [
-      "warn",
-      {
-        "argsIgnorePattern": "^_"
-      }
-    ],
+    "no-unused-vars": "off",
     "func-names": "off",
     "consistent-return": "off",
     "no-restricted-syntax": "off",
@@ -52,7 +47,9 @@ module.exports = {
     "import/no-cycle": "off",
     "no-constant-condition": "off",
     "no-continue": "off",
-    "import/no-mutable-exports": "off"
+    "import/no-mutable-exports": "off",
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
   },
   "settings": {
     "import/resolver": {
