@@ -49,7 +49,7 @@ module.exports = {
     "no-constant-condition": "off",
     "no-continue": "off",
     "import/no-mutable-exports": "off",
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-extraneous-dependencies': 'off',
     'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
   },
   "settings": {
